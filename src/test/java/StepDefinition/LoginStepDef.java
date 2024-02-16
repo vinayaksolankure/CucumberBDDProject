@@ -329,18 +329,18 @@ public class LoginStepDef extends BaseClass {
 
 	}
 
-	public void captureScreenshot(WebDriver driver, Scenario sc) throws IOException 
-	{
-		// Step 1 : convert webdriver object to takescreenshot interface
-		TakesScreenshot screenshot = ((TakesScreenshot) driver);  // Typecasted
-
-		// Step 2 : call getScreenShotAs method to create img file
-		File src = screenshot.getScreenshotAs(OutputType.FILE);
-
-		File dest = new File(System.getProperty("user.dir") + "\\Screenshots\\" + sc + ".png" );
-
-		// Step 3 : Copy img file to dest.
-		FileUtils.copyFile(src, dest);
-	}
+	//	public void captureScreenshot(WebDriver driver, Scenario sc) throws IOException 
+	//	{
+	//		// Step 1 : convert webdriver object to takescreenshot interface
+	//		TakesScreenshot screenshot = ((TakesScreenshot) driver);  // Typecasted
+	//
+	//		// Step 2 : call getScreenShotAs method to create img file
+	//		File src = screenshot.getScreenshotAs(OutputType.FILE);
+	//
+	//		File dest = new File(System.getProperty("user.dir") + "\\Screenshots\\" + sc + ".png" );
+	//
+	//		// Step 3 : Copy img file to dest.
+	//		FileUtils.copyFile(src, dest);
+	//	}
 
 }
