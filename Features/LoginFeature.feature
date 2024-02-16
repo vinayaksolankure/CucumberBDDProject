@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 Feature: Login 
 
-@Sanity #@regression
+@Sanity 
 Scenario: Successful Login with Valid Credentials 
 	Given User Launch Chrome browser 
 	When User opens URL "http://admin-demo.nopcommerce.com/login" 
